@@ -4,31 +4,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./main.css">
+    <script src="./app.js" defer></script>
     <title>Pablo's Portfolio</title>
 </head>
 <body>
     <header>
         <nav>
+            <h1>Pablo Avaloz</h1>
             <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Resume</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#" id="about">About</a></li>
+                <li><a href="#" id="projects">Projects</a></li>
+                <li><a href="#" id="skills">Skills</a></li>
+                <li><a href="#" id="contact">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section class ="about">
-
+                <div class="about-me">
+                    <h1>Pablo Avaloz</h1>
+                    <h3>- FullStack Software Engineer -</h3>
+                    <p>
+                        Hi! My name is Pablo. I am a fullstack software engineer with a profiecy across multiple technologies, but with a particular interest in
+                        front-end work and React. I am constantly learning and currently am looking for a place to grow as a professional in the industry. I genuinly
+                        really enjoy coding, so I do spend a lot of my free time working on side projects, but when I'm not coding, you can find me watching some of my
+                        favorite live sports (Soccer and Basketball) or playing the latest AAA titles with fiends. 
+                    </p>
+                </div>
         </section>
         <section class="projects">
-
+            <h1>Projects</h1>
+            <div class="container">
+                <div class="project-card">
+                    <a class="web-link" href="#">
+                        <img src="./images/Fredslist.png" alt="">
+                        <div class="flex-info">   
+                            <h3>Fred's List</h3>
+                            <h3>TechStack: <span>React, Express, Node.js, MongoDB</span></h3>
+                            <h3>Description: <span> Fred's list is an app that takes the idea behind craiglist and combines it with 
+                                the styling and functionality of modern e-commerce and social media apps. </span></h3>
+                        </div>
+                    </a>    
+                </div>
+                <div class="project-card">
+                    <a class="web-link" href="https://shopping-list-buddy.herokuapp.com/">
+                        <img src="./images/LIstBuddy.png" alt="">
+                        <div class="flex-info">   
+                            <h3>List Buddy</h3>
+                            <h3>TechStack: <span>Express, Node.js, MongoDB</span></h3>
+                            <h3>Description: <span> List Buddy is an orginizational tool to help with shoppiing lists. The app allows the user to 
+                                add stores and products to their profile, then use the two to create unique lists. </span></h3>
+                        </div>
+                    </a>    
+                </div>
+            </div>
+                <div class="container">
+                    <div class="project-card">
+                        <a class="web-link" href="https://wayfarer-lyfe.herokuapp.com/">
+                            <img src="./images/ProjectWayfarer.png" alt="">
+                            <div class="flex-info">   
+                                <h3>Project Wayfarer</h3>
+                                <h3>TechStack: <span>Django, Javascript, PostgreSQL</span></h3>
+                                <h3>Description: <span> Project Wayfarer is an app that was built to resemeble a travel community. Users can share posts about their favorite locations around the globe.
+                                   </span></h3>
+                            </div>
+                        </a>    
+                    </div>
+                    <div class="project-card">
+                        <a class="web-link" href="https://pages.git.generalassemb.ly/Pavaloz99/pokemon-battle/">
+                            <img src="./images/Pokemon.png" alt="">
+                            <div class="flex-info">   
+                                <h3>Pokemon Battle</h3>
+                                <h3>TechStack: <span>HTML, CSS, Javascript</span></h3>
+                                <h3>Description: <span> Pokemon battle is a 1v1 battle game that closely replicated a true pokemon battle
+                                    without going in too deep with attack multipliers. </span></h3>
+                            </div>
+                        </a>    
+                    </div>
+            </div>
         </section>
-        <section class="resume">
-
+        <section class="skills">
+            <div class="flexbox">
+                <div class="skills-list">
+                    <h1>Skills</h1>
+                    <h2>Strongest</h2>
+                    <p>Javascript</p>
+                    <p>HTML5</p>
+                    <p>CSS</p>
+                    <p>React</p>
+                    <p>Express</p>
+                    <p>Node.js</p>
+                    <p>MongoDB</p>
+                </div>
+                <div class="skills-list">
+                    <p>Python</p>
+                    <p>Django</p>
+                    <p>Flask</p>
+                    <p>PostgreSQL</p>
+                    <h2>Weakest</h2>
+                </div>
+            </div>
         </section>
         <section class="contact">
-            
+            <div class="contact-content">
+            <h1>Contact Me</h1>
+
+            <form action="mailto:avalozp@gmail.com" method="post" enctype="multipart/form-data" name="EmailForm">
+                <p><input type="text" name="Name" placeholder="Your Name"></p>
+                <p><input type="text" name="Email" placeholder="Your Email"></p>
+                <p><textarea name="Message" cols="30" rows="10" placeholder="Message"></textarea></p>
+                <p><input class="send" type="submit" value="Send"></p>
+            </form>
+        </div>
         </section>
     </main>
     
