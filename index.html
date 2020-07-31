@@ -110,11 +110,13 @@
             <div class="contact-content">
             <h1>Contact Me</h1>
 
+            <style>
+                .hide { position:absolute; top:-1px; left:-1px; width:1px; height:1px; }
+              </style>
+              
+              <iframe name="hiddenFrame" class="hide"></iframe>
 
-            https://docs.google.com/forms/d/e/1FAIpQLSeUSZVo9XBSn9mZ_fIIUpPQS0sXcxOnIOYlXONGTIbZKqzVYQ/viewform?
-            usp=pp_url&entry.1180112893=SomeName&entry.910894197=SomeName&entry.1405336623=SomeMessage
-
-            <form action="https://docs.google.com/forms/d/e/1FAIpQLSeUSZVo9XBSn9mZ_fIIUpPQS0sXcxOnIOYlXONGTIbZKqzVYQ/formResponse?" method="POST" enctype="multipart/form-data" name="EmailForm">
+            <form action="https://docs.google.com/forms/d/e/1FAIpQLSeUSZVo9XBSn9mZ_fIIUpPQS0sXcxOnIOYlXONGTIbZKqzVYQ/formResponse?" target="hiddenFrame" method="POST" enctype="multipart/form-data" name="EmailForm">
                 <p><input type="text" name="entry.1180112893" id="entry.1180112893" placeholder="Your Name"></p>
                 <p><input type="text" name="entry.910894197" id="entry.910894197" placeholder="Your Email"></p>
                 <p><textarea name="entry.1405336623" id="entry.1405336623" cols="30" rows="10" placeholder="Message"></textarea></p>
