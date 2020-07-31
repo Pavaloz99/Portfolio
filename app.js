@@ -21,3 +21,11 @@ document.querySelector('#contact').addEventListener('click', function(e){
     const aboutPage = document.querySelector('.contact');
     aboutPage.scrollIntoView({behavior: 'smooth'});
 });
+
+document.querySelector('.send').addEventListener('click', function(){
+
+   document.querySelector('form').style.display = 'none';
+
+   document.querySelector('.thankyou').style.display = 'block';
+
+});
