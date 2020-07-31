@@ -110,10 +110,14 @@
             <div class="contact-content">
             <h1>Contact Me</h1>
 
-            <form action="contact-form-handler.php" method="POST" enctype="multipart/form-data" name="EmailForm">
-                <p><input type="text" name="Name" placeholder="Your Name"></p>
-                <p><input type="text" name="Email" placeholder="Your Email"></p>
-                <p><textarea name="Message" cols="30" rows="10" placeholder="Message"></textarea></p>
+
+            https://docs.google.com/forms/d/e/1FAIpQLSeUSZVo9XBSn9mZ_fIIUpPQS0sXcxOnIOYlXONGTIbZKqzVYQ/viewform?
+            usp=pp_url&entry.1180112893=SomeName&entry.910894197=SomeName&entry.1405336623=SomeMessage
+
+            <form action="https://docs.google.com/forms/d/e/1FAIpQLSeUSZVo9XBSn9mZ_fIIUpPQS0sXcxOnIOYlXONGTIbZKqzVYQ/viewform?" method="POST" enctype="multipart/form-data" name="EmailForm">
+                <p><input type="text" name="entry.1180112893" id="entry.1180112893" placeholder="Your Name"></p>
+                <p><input type="text" name="entry.910894197" id="entry.910894197" placeholder="Your Email"></p>
+                <p><textarea name="entry.1405336623" id="entry.1405336623" cols="30" rows="10" placeholder="Message"></textarea></p>
                 <p><input class="send" type="submit" value="Send"></p>
             </form>
         </div>
